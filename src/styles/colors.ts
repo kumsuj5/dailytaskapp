@@ -22,7 +22,8 @@ const generateScale = (base: string): ColorScale => ({
 export const Colors = {
   primary: generateScale("#4CAF50"),
   secondary: generateScale("#FFC107"),
-
+  white: generateScale("#FFFFFF"),
+  black: generateScale("#000000"),
   red: generateScale("#F44336"),
   pink: generateScale("#E91E63"),
   purple: generateScale("#9C27B0"),

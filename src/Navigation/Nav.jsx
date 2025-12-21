@@ -7,8 +7,8 @@ import MainNav from './MainNav';
 const Nav = () => {
     return (
         <NavigationContainer>
-            {/* <DashNav /> */}
-            <MainNav />
+            <DashNav />
+            {/* <MainNav /> */}
         </NavigationContainer>
     )
 }

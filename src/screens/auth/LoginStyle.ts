@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
         marginBottom: 24,
         textAlign: 'center',
         color: Colors.grey[900],
+        fontFamily:'OpenSans-Medium',
     },
     loginContainer: {
         width: '90%',
@@ -50,6 +51,22 @@ const styles = StyleSheet.create({
     },
     formInnerContainer:{
         marginBottom:20,
+    },
+    forgotPassword:{
+        textAlign:'right',
+        color:Colors.deepPurple[700],
+        marginBottom:15,
+        fontWeight:'500',
+    },
+    signUpText:{
+        textAlign:'center',
+        marginTop:20,
+        color:Colors.black[800],
+        fontSize:16,
+    },
+    signUpLink:{
+        color:Colors.deepPurple[700],
+        fontWeight:'600',
     }
 
 });

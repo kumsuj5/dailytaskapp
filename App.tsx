@@ -1,5 +1,7 @@
-import { View, Text } from 'react-native';
 import React, { useEffect, useState } from 'react';
+import { StatusBar } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import SplashScreen from './src/screens/splash/SplashScreen';
 import Nav from './src/Navigation/Nav';
 
@@ -8,19 +10,24 @@ const App = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowSplash(false)
+      setShowSplash(false);
     }, 3000);
+
+    return () => clearTimeout(timer);
   }, []);
 
-  if (showSplash)
-    return (
-      <SplashScreen />
-    );
   return (
-    <View style={{ flex: 1 }}>
-      <Nav />
-    </View>
-  )
-}
+    <SafeAreaProvider>
+      {/* 🔥 FULL SCREEN STATUS BAR */}
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content" // light-content if dark bg
+      />
 
-export default App
+      {showSplash ? <SplashScreen /> : <Nav />}
+    </SafeAreaProvider>
+  );
+};
+
+export default App;

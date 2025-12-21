@@ -43,7 +43,7 @@ export const Colors = {
   brown: generateScale("#795548"),
   grey: generateScale("#9E9E9E"),
   blueGrey: generateScale("#607D8B"),
-
+  peach: generateScale("#FD7979"),
   success: generateScale("#2ECC71"),
   warning: generateScale("#F1C40F"),
   danger: generateScale("#E74C3C"),

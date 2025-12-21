@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontWeight:'500',
         marginTop:5,
+        color:Colors.black[500],
+        fontFamily:'OpenSans-Medium',
     },
     textInput:{
         width:'100%',
@@ -19,11 +21,13 @@ const styles = StyleSheet.create({
         borderRadius:5,
         paddingHorizontal:10,
         marginTop:10,
+        fontFamily:'OpenSans-Medium',
     },
     errortext:{
         color:Colors.red[500],
         marginTop:5,
         alignItems:'flex-start',
+        fontFamily:'OpenSans-Medium',
     }
 });
 export default styles;
